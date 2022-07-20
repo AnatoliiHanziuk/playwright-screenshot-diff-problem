@@ -1,0 +1,15 @@
+{
+  "name": "playwright-screenshot-diff-issue",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "install-browsers": "npx playwright install",
+    "test": "npx playwright test",
+    "visual-regression-test": "npx playwright test --grep @vis-reg",
+    "update-all-screenshots": "npx playwright test --update-snapshots",
+    "show-report": "npx playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.23.0"
+  }
+}
